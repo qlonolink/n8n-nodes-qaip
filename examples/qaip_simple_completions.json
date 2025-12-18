@@ -1,0 +1,68 @@
+{
+  "name": "QAIP Simple Completions",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "21c769ce-bb50-411e-b75a-fa736aad0cad",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "messages": {
+          "message": [
+            {
+              "content": "What is QAIP?"
+            }
+          ]
+        },
+        "options": {},
+        "requestOptions": {}
+      },
+      "type": "CUSTOM.qaip",
+      "typeVersion": 1,
+      "position": [
+        208,
+        0
+      ],
+      "id": "956e6c2a-6f5c-49bb-9502-3ed3cdc4726a",
+      "name": "Create a completion",
+      "credentials": {
+        "qaipApi": {
+          "id": "WstPUTSjvUVGqahZ",
+          "name": "QAIP"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Create a completion",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "c84c2ba8-38fd-4917-b79d-3beac8392564",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "f5ff7f522b461e03b41fcfaf0e4463a887a04a2d73beac31c4b22a673e07f6d5"
+  },
+  "id": "ATyEmV9AzKQnEmc7",
+  "tags": []
+}
