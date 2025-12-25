@@ -1,6 +1,6 @@
 {
   "name": "@qlonolink/n8n-nodes-qaip",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "n8n community nodes for integrating with QAIP API.",
   "license": "MIT",
   "homepage": "https://developer.qaip.com/",
@@ -20,6 +20,9 @@
     "prepublishOnly": "n8n-node prerelease"
   },
   "files": ["dist"],
+  "publishConfig": {
+    "access": "public"
+  },
   "n8n": {
     "n8nNodesApiVersion": 1,
     "strict": true,
