@@ -1,6 +1,6 @@
 {
   "name": "@qlonolink/n8n-nodes-qaip",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "n8n community nodes for integrating with QAIP API.",
   "license": "MIT",
   "homepage": "https://developer.qaip.com/",
@@ -8,8 +8,12 @@
     "type": "git",
     "url": "https://github.com/qlonolink/n8n-nodes-qaip.git"
   },
-  "keywords": ["n8n-community-node-package"],
-  "author": { "name": "Qlonolink" },
+  "keywords": [
+    "n8n-community-node-package"
+  ],
+  "author": {
+    "name": "Qlonolink"
+  },
   "scripts": {
     "build": "n8n-node build",
     "build:watch": "tsc --watch",
@@ -19,15 +23,21 @@
     "release": "n8n-node release",
     "prepublishOnly": "n8n-node prerelease"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "access": "public"
   },
   "n8n": {
     "n8nNodesApiVersion": 1,
     "strict": true,
-    "credentials": ["dist/credentials/QaipApi.credentials.js"],
-    "nodes": ["dist/nodes/Qaip/Qaip.node.js"]
+    "credentials": [
+      "dist/credentials/QaipApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Qaip/Qaip.node.js"
+    ]
   },
   "devDependencies": {
     "@n8n/node-cli": "*",
@@ -36,5 +46,7 @@
     "release-it": "^19.0.4",
     "typescript": "5.9.2"
   },
-  "peerDependencies": { "n8n-workflow": "*" }
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
 }
